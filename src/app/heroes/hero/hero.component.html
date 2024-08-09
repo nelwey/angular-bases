@@ -1,0 +1,20 @@
+<h3>3. app heroes hero</h3>
+<hr>
+
+
+<dl>
+  <td>Nombre:</td>
+  <dd> {{name}} </dd>
+
+  <td>Edad:</td>
+  <dd> {{age}} </dd>
+
+  <td>Metodo:</td>
+  <dd>{{getHeroDescription()}}</dd>
+
+  <td>Capitalizado:</td>
+  <dd>{{capitalizeName}}</dd>
+</dl>
+
+<button *ngIf="name !== 'Spiderman'" (click)="changeHero()" class="btn btn-primary mx-2">Cambiar nombre</button>
+<button (click)="changeAge()" class="btn btn-primary mx-2">Cambiar edad</button>
